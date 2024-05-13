@@ -11,6 +11,7 @@ nav{
     display: flex;
     background-color: #0000ff;
     justify-content: space-between;
+    padding: 4px;
 }
 .navegacion_escritorio{
     display: none;
@@ -88,7 +89,18 @@ footer{
         display: grid;
         grid-template-areas: "nav nav" "section main" "footer footer";
         grid-template-columns: 1fr 4fr;
-}
+} 
+
+    nav{
+        display: flex;
+        justify-content: space-around;
+        
+    }
+    .navegacion_escritorio{
+    display: flex;
+    gap: 1px;
+    justify-content: space-around;
+    }
 
     section{
         display: flex;
@@ -99,13 +111,7 @@ footer{
     select{
         height: 1rem;
     }
-   nav{
-    display: flex;
-    justify-content: space-between;
-   }
-   .navegacion_escritorio{
-    display: flex;
-   }
+   
 
     .navegacion_escritorio li{
         list-style: none;
@@ -114,4 +120,20 @@ footer{
     .hamburguesa{
         display: none;
     }
+    main{
+        display:grid;
+        grid-template-columns: auto auto auto;
+        gap: 1 rem;
+        background-color: #CBCBD6;
+        height: 90vh;
+    }
+    .tarjeta{
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        margin: 4px;
+        flex-wrap: wraps;
+        flex-grow: 1;
+    }
+
 }
